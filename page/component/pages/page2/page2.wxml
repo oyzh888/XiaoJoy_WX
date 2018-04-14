@@ -1,0 +1,31 @@
+<import src="../../../common/head.wxml" />
+<import src="../../../common/foot.wxml" />
+
+<view class="container">
+  <template is="head" data="{{title: 'Now what about this?'}}"/>
+
+  <view class="page-body">
+    <view class="page-section" style='text-align:center;'>
+      <text>A</text>
+    </view>
+    
+    <view class="page-section page-section-gap" style="text-align: center;">
+      <audio style="text-align: left" src="{{current.src}}" poster="{{current.poster}}" name="{{current.name}}" author="{{current.author}}" action="{{audioAction}}" controls></audio>
+    </view>
+
+    <view class="page-section" style='text-align:center;'>
+      <text>B</text>
+    </view>
+    
+    <view class="page-section page-section-gap" style="text-align: center;">
+      <audio style="text-align: left" src="{{current.src}}" poster="{{current.poster}}" name="{{current.name}}" author="{{current.author}}" action="{{audioAction}}" controls></audio>
+    </view>
+    <view class="btn-area">
+<button class="btn-left" type="primary" bindtap="choose" >A</button>
+<button class="btn-right" type="primary" bindtap="choose">B</button>
+</view>
+  </view>
+  
+
+  <!-- <template is="foot" /> -->
+</view>

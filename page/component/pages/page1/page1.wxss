@@ -1,0 +1,24 @@
+
+/* page */
+
+.custom-head {
+  font-size: 30px;
+}
+
+.btn-left{
+  /* margin-right: 10rpx; */
+  padding: 20px,10px,20px,10px;
+  width: 45%;
+  text-align: center;
+  vertical-align:middle;
+  float: left
+}
+
+.btn-right{
+  /* margin-right: 10rpx; */
+  padding: 20px,10px,20px,10px;
+  width: 45%;
+  text-align: center;
+  vertical-align:middle;
+  float: right
+}

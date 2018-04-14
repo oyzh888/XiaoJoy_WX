@@ -1,0 +1,20 @@
+.page-section-ctn {
+  text-align: center;
+}
+
+.image {
+  margin-top: 30rpx;
+  width: 580rpx;
+  height: 208rpx;
+}
+
+.mytext{
+  text-align:center;
+  color: #D8D8D8
+}
+
+.mytitle{
+  text-align:center;
+  color: #000;
+  font-size:3ch
+}
