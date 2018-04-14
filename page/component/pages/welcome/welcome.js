@@ -2,6 +2,7 @@ Page({
   data: {
   },
   choose: function () {
+    getApp().globalData.currentQuestionId = 1;
     console.log('click');
     wx.navigateTo({
       url: '../page1/page1'

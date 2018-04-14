@@ -10,14 +10,23 @@ Page({
       method: 'pause'
     }
   },
-  choose: function () {
+  choose: function (b) {
     console.log('click');
     wx.showModal({
       title: 'Are you sure?',
       // content: '这是一个模态弹窗',
       success: function (res) {
         if (res.confirm) {
-          console.log('make sure');
+          console.log(b.target.id);
+          var i = getApp().globalData.currentQuestionId;
+          var usersAnswer = b.target.id;
+          console.log(i)
+          var correctAnswer = getApp().globalData.correctAnswersList[i - 1];
+          if (usersAnswer == correctAnswer) {
+            getApp().globalData.score += 25;
+          }
+          console.log("Your answer: " + usersAnswer + "\nCorrect answer: " + correctAnswer + "\n" + "Score: " + getApp().globalData.score);
+          getApp().globalData.currentQuestionId += 1;
           wx.navigateTo({
             url: '../page2/page2'
           })

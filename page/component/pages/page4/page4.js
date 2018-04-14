@@ -10,17 +10,29 @@ Page({
       method: 'pause'
     }
   },
-  choose: function () {
+  choose: function (b) {
     console.log('click');
+    // Duplicated code! Refactor
+    console.log(b.target.id);
+    var i = getApp().globalData.currentQuestionId;
+    var usersAnswer = b.target.id;
+    var correctAnswer = getApp().globalData.correctAnswersList[i - 1];
+    if (usersAnswer == correctAnswer) {
+      getApp().globalData.score += 25;
+    }
+    console.log("Your answer: " + usersAnswer + "\nCorrect answer: " + correctAnswer + "\n" + "Score: " + getApp().globalData.score);
+    getApp().globalData.currentQuestionId += 1;
+
     wx.showModal({
-      title: 'You finished!',
+      title: 'Are you sure?',
       // content: '这是一个模态弹窗',
       success: function (res) {
         if (res.confirm) {
-          console.log('make sure');
-          // wx.navigateTo({
-          //   url: '../page2/page2'
-          // })
+          console.log('You finished!');
+          
+          wx.navigateTo({
+            url: '../pageOfResults/pageOfResults'
+          })
         }
       }
     })

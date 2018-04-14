@@ -1,0 +1,22 @@
+<import src="../../../common/head.wxml" />
+<import src="../../../common/foot.wxml" />
+
+<view class="container">
+  <template is="head" data="{{title: 'Results'}}"/>
+
+  <view class="page-body">
+
+    <view class="page-section" style='text-align:center;'>
+      <text>Your score: {{score}}</text>
+    </view>
+    
+    
+    <view class="btn-area">
+<button class="btn-left" type="primary" bindtap="playAgain" >Play again</button>
+<button class="btn-right" type="primary" bindtap="quit">Quit</button>
+</view>
+  </view>
+  
+
+  <!-- <template is="foot" /> -->
+</view>

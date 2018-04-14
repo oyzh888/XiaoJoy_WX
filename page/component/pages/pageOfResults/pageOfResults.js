@@ -10,29 +10,30 @@ Page({
       method: 'pause'
     }
   },
-  choose: function (b) {
+  onLoad: function() {
+    this.setData({
+      score: getApp().globalData.score
+    })
+  },
+  choose: function() {
     console.log('click');
     wx.showModal({
       title: 'Are you sure?',
       // content: '这是一个模态弹窗',
       success: function (res) {
         if (res.confirm) {
-          // Duplicated code! Refactor
-          console.log(b.target.id);
-          var i = getApp().globalData.currentQuestionId;
-          var usersAnswer = b.target.id;
-          var correctAnswer = getApp().globalData.correctAnswersList[i - 1];
-          if (usersAnswer == correctAnswer) {
-            getApp().globalData.score += 25;
-          }
-          console.log("Your answer: " + usersAnswer + "\nCorrect answer: " + correctAnswer + "\n" + "Score: " + getApp().globalData.score);
-          getApp().globalData.currentQuestionId += 1;
-
-          wx.navigateTo({
-            url: '../page3/page3'
-          })
+          console.log('make sure');
+          // wx.navigateTo({
+          //   url: '../page2/page2'
+          // })
         }
       }
+    })
+  },
+  playAgain: function() {
+    resetGlobalData();
+    wx.navigateTo({
+      url: '../page1/page1'
     })
   }
 })

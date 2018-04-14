@@ -21,8 +21,8 @@
       <audio style="text-align: left" src="{{current.src}}" poster="{{current.poster}}" name="{{current.name}}" author="{{current.author}}" action="{{audioAction}}" controls></audio>
     </view>
     <view class="btn-area">
-<button class="btn-left" type="primary" bindtap="choose" >A</button>
-<button class="btn-right" type="primary" bindtap="choose">B</button>
+<button class="btn-left" type="primary" bindtap="choose" id="A" >A</button>
+<button class="btn-right" type="primary" bindtap="choose" id="B">B</button>
 </view>
   </view>
   

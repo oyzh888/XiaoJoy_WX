@@ -8,7 +8,8 @@ Page({
     },
     audioAction: {
       method: 'pause'
-    }
+    },
+    slider_value:'',
   },
   choose: function () {
     console.log('click');
@@ -18,11 +19,22 @@ Page({
       success: function (res) {
         if (res.confirm) {
           console.log('make sure');
+          var score_user_get = getApp().globalData.scoreQ3;
+          score_user_get = 25 * (1 - Math.abs(score_user_get - 50) / 50)
+          getApp().globalData.score += score_user_get;
+          console.log(getApp().globalData.score)
           wx.navigateTo({
             url: '../page4/page4'
           })
         }
       }
     })
+  },
+  slider3change: function(s){
+    console.log(s.detail.value);
+    getApp().globalData.scoreQ3 = s.detail.value;
   }
+  
 })
+
+
