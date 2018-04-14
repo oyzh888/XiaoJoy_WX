@@ -20,5 +20,6 @@ Page({
     this.setData({
       items: items
     });
-  }
+  },
+  
 })

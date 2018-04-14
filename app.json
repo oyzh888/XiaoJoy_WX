@@ -1,7 +1,12 @@
 {
   "pages": [
-    "page/component/pages/audio/audio",
+    "page/component/pages/welcome/welcome",
     "page/component/index",
+    "page/component/pages/page1/page1",
+    "page/component/pages/page2/page2",
+    "page/component/pages/page3/page3",
+
+
     "page/component/pages/view/view",
     "page/component/pages/scroll-view/scroll-view",
     "page/component/pages/swiper/swiper",
@@ -25,8 +30,7 @@
     "page/component/pages/navigator/navigate",
     "page/component/pages/navigator/redirect",
 
-    "page/component/pages/image/image",
-
+    
     "page/component/pages/video/video",
 
     "page/component/pages/map/map",
@@ -83,7 +87,7 @@
   ],
   "window": {
     "navigationBarTextStyle": "black",
-    "navigationBarTitleText": "演示",
+    "navigationBarTitleText": "XiaoJoy",
     "navigationBarBackgroundColor": "#F8F8F8",
     "backgroundColor": "#F8F8F8"
   },
