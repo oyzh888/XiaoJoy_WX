@@ -18,9 +18,9 @@ Page({
       success: function (res) {
         if (res.confirm) {
           console.log('make sure');
-          // wx.navigateTo({
-          //   url: '../page2/page2'
-          // })
+          wx.navigateTo({
+            url: '../page4/page4'
+          })
         }
       }
     })
