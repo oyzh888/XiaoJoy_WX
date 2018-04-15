@@ -1,23 +1,44 @@
 Page({
   data: {
-    current: {
-      poster: 'http://xiaojoy-1252249490.cosbj.myqcloud.com/images/Joy.png?sign=7T8cZVJDpsd7bSF88mLU8IV23JdhPTEyNTIyNDk0OTAmaz1BS0lENzNsRldZMXlNV1I4YXBkYTdVY1dGbTZDM2YxN01mOWkmZT0xNTI2MzEwMjM2JnQ9MTUyMzcxODIzNiZyPTIwNTMxNzIwNTgmZj0vaW1hZ2VzL0pveS5wbmcmYj14aWFvam95',
-      name: '此时此刻',
-      author: '许巍',
-      src: 'http://ws.stream.qqmusic.qq.com/M500001VfvsJ21xFqb.mp3?guid=ffffffff82def4af4b12b3cd9337d5e7&uin=346897220&vkey=6292F51E1E384E06DCBDC9AB7C49FD713D632D313AC4858BACB8DDD29067D3C601481D36E62053BF8DFEAF74C0A5CCFADD6471160CAF3E6A&fromtag=46',
+    current1: {
+      poster: 'https://xiaojoy.blob.core.chinacloudapi.cn/audios/Joy.png',
+      name: 'Melody-1',
+      author: 'XiaoJoy',
+      src: 'https://xiaojoy.blob.core.chinacloudapi.cn/audios/1_AI_Bach_C.mp3',
+
     },
+    current2: {
+      poster: 'https://xiaojoy.blob.core.chinacloudapi.cn/audios/xiao.png',
+      name: 'Melody-2',
+      author: 'XiaoJoy',
+      src: 'https://xiaojoy.blob.core.chinacloudapi.cn/audios/3_%E6%B5%81%E8%A1%8C.mp3',
+    },
+
     audioAction: {
       method: 'pause'
-    }
+    },
+
+  },
+  play1: function () {
+    this.audioCtx = wx.createAudioContext('audio1'),
+      this.audioCtx.pause()
+  },
+  play2: function () {
+    this.audioCtx = wx.createAudioContext('audio2'),
+      this.audioCtx.pause()
   },
   choose: function (b) {
     console.log('click');
+    this.play1();
+    this.play2();
     wx.showModal({
       title: 'Are you sure?',
       // content: '这是一个模态弹窗',
       success: function (res) {
         if (res.confirm) {
+          
           console.log(b.target.id);
+          
           var i = getApp().globalData.currentQuestionId;
           var usersAnswer = b.target.id;
           console.log(i)
