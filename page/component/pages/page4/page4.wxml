@@ -10,7 +10,7 @@
     </view>
     
     <view class="page-section page-section-gap" style="text-align: center;">
-      <audio style="text-align: left" src="{{current.src}}" poster="{{current.poster}}" name="{{current.name}}" author="{{current.author}}" action="{{audioAction}}" controls></audio>
+      <audio style="text-align: left" src="{{current1.src}}" id="audio1" bindplay="play2" poster="{{current1.poster}}" name="{{current1.name}}" author="{{current1.author}}" action="{{audioAction}}" controls></audio>
     </view>
 
     <view class="page-section" style='text-align:center;'>
@@ -18,7 +18,7 @@
     </view>
     
     <view class="page-section page-section-gap" style="text-align: center;">
-      <audio style="text-align: left" src="{{current.src}}" poster="{{current.poster}}" name="{{current.name}}" author="{{current.author}}" action="{{audioAction}}" controls></audio>
+      <audio style="text-align: left" src="{{current2.src}}" id="audio2" bindplay="play1" poster="{{current2.poster}}" name="{{current2.name}}" author="{{current2.author}}" action="{{audioAction}}" controls></audio>
     </view>
     <view class="btn-area">
 <button class="btn-left" type="primary" bindtap="choose" id="A">A</button>
