@@ -4,7 +4,7 @@ Page({
   choose: function () {
     getApp().globalData.currentQuestionId = 1;
     console.log('click');
-    wx.navigateTo({
+    wx.redirectTo({
       url: '../page1/page1'
     })
   },

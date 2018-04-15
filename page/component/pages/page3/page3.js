@@ -28,7 +28,7 @@ Page({
           score_user_get = 25 * (1 - Math.abs(score_user_get - 50) / 50)
           getApp().globalData.score += score_user_get;
           console.log(getApp().globalData.score)
-          wx.navigateTo({
+          wx.redirectTo({
             url: '../page4/page4'
           })
         }

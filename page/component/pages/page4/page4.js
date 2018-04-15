@@ -48,7 +48,7 @@ Page({
         if (res.confirm) {
           console.log('You finished!');
           
-          wx.navigateTo({
+          wx.redirectTo({
             url: '../pageOfResults/pageOfResults'
           })
         }
