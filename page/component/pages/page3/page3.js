@@ -8,7 +8,7 @@ Page({
       poster: 'https://xiaojoy.blob.core.chinacloudapi.cn/audios/Joy.png',
       name: 'Melody-5',
       author: 'XiaoJoy',
-      src: 'https://xiaojoy.blob.core.chinacloudapi.cn/audios/3_AI_Attention.mp3',
+      src: 'https://xiaojoy.blob.core.chinacloudapi.cn/audios/Project-For%20MM%20Video_1.mp3',
     },
     audioAction: {
       method: 'pause'
