@@ -8,7 +8,7 @@ Page({
       poster: 'https://xiaojoy.blob.core.chinacloudapi.cn/audios/Joy.png',
       name: 'Melody-5',
       author: 'XiaoJoy',
-      src: 'https://xiaojoy.blob.core.chinacloudapi.cn/audios/3_AI_Attention.mp3',
+      src: 'https://xiaojoy.blob.core.chinacloudapi.cn/audios/Project-For%20MM%20Video_1.mp3',
     },
     audioAction: {
       method: 'pause'
@@ -25,7 +25,7 @@ Page({
         if (res.confirm) {
           console.log('make sure');
           var score_user_get = getApp().globalData.scoreQ3;
-          score_user_get = 25 * (1 - Math.abs(score_user_get - 50) / 50)
+          score_user_get = 25 * (1 - Math.abs(score_user_get - 26) / 74)
           getApp().globalData.score += score_user_get;
           console.log(getApp().globalData.score)
           wx.redirectTo({

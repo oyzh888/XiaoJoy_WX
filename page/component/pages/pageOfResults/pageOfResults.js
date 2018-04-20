@@ -12,7 +12,7 @@ Page({
   },
   onLoad: function() {
     this.setData({
-      score: getApp().globalData.score
+      score: Math.round(getApp().globalData.score)
     })
   },
   choose: function() {
