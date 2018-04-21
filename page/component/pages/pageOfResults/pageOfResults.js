@@ -1,18 +1,18 @@
 Page({
 
-  onLaunch: function (){
-    wx.getUserInfo({
-      success: function (res) {
-        var userinfo = res.userInfo
-        console.log(userinfo.city)
-        var nickname = userinfo.nickname
-        var city = userinfo.city
-        var gender = userinfo.gender
-      },
-      fail: function (res) { console.log("fail") },
-      complete: function (res) { },
-    })
-  },
+  // onLoad: function (){
+  //   wx.getUserInfo({
+  //     success: function (res) {
+  //       var userinfo = res.userInfo
+  //       console.log(userinfo.city)
+  //       var nickname = userinfo.nickname
+  //       var city = userinfo.city
+  //       var gender = userinfo.gender
+  //     },
+  //     fail: function (res) { console.log("fail") },
+  //     complete: function (res) { console.log("finish!!" + userinfo.city)},
+  //   })
+  // },
 
   data: {
     current: {
@@ -26,8 +26,37 @@ Page({
     }
   },
   onLoad: function() {
+    console.log(getApp().globalData.usersAnswersList)
+    var u = getApp().globalData.usersAnswersList
+    var c = getApp().globalData.correctAnswersList
+    var n = getApp().globalData.currentQuestionId - 1
+    getApp().globalData.score = 0
+    console.log(c)
+    for (var i = 1; i <= n; i++) {
+      if (typeof u[i] == 'number') {
+        var score_user_get = getApp().globalData.scoreQ3
+        var score_user_get = 25 * (1 - Math.abs(score_user_get - 26) / 74)
+        getApp().globalData.score += score_user_get
+      }
+      else if (u[i] == c[i]) {
+        getApp().globalData.score += 25
+      }
+
+    }
     this.setData({
       score: Math.round(getApp().globalData.score)
+    })
+    wx.getUserInfo({
+      success: function (res) {
+        var userInfo = res.userInfo
+        var nickName = userInfo.nickName
+        var avatarUrl = userInfo.avatarUrl
+        var gender = userInfo.gender //性别 0：未知、1：男、2：女
+        var province = userInfo.province
+        var city = userInfo.city
+        var country = userInfo.country
+        console.log(userInfo)
+      }
     })
   },
   choose: function() {

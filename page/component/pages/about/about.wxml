@@ -44,8 +44,9 @@ https://github.com/tensorflow/magenta
       <audio style="text-align: left" src="{{current5.src}}"  id="5" bindplay="myplay" poster="{{current5.poster}}" name="{{current5.name}}" author="{{current5.author}}" action="{{audioAction}}" controls></audio>
       <audio style="text-align: left" src="{{current6.src}}"  id="6" bindplay="myplay" poster="{{current6.poster}}" name="{{current6.name}}" author="{{current6.author}}" action="{{audioAction}}" controls></audio>
       <audio style="text-align: left" src="{{current7.src}}"  id="7" bindplay="myplay" poster="{{current7.poster}}" name="{{current7.name}}" author="{{current7.author}}" action="{{audioAction}}" controls></audio>
+      <template is="head" data="{{desc: 'Copyright Reserved by XiaoJoy Team'}}"/>
     </view>
-
+  
   </view>
 
   

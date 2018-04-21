@@ -1,7 +1,7 @@
 Page({
-  
 
   onLoad: function () {
+    console.assert(123)
     // 页面渲染后 执行
     wx.getUserInfo({
       success: function (res) {
@@ -26,9 +26,7 @@ Page({
       url: '../page1/page1'
     })
   },
-  onLoad:function(){
-    
-  },
+  
   onShareAppMessage: function (res) {
     if (res.from === 'button') {
       // 来自页面内转发按钮

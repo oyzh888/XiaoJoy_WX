@@ -16,13 +16,14 @@
       </view>
     </view>
     <view class="page-section page-section-gap">
-      <view class='mytitle'>Welcome to XiaoJoy</view>
-      <view class='mytext'>XiaoJoy is an AI composer.</view>
-      <view class='mytext' style='color: #000;'>Can you tell which melody is made by AI?</view>
+      <view class='mytitle'>欢迎来到 XiaoJoy</view>
+      <view class='mytext'>(人工智能(AI)作曲机器人)</view>
+      <text>\n\n</text>
+      <view class='mytext' style='color: #000;'>你能分辨出哪首乐曲是<b>AI</b>创作的么?</view>
     </view>  
 
     <view class="page-section page-section-gap">
-      <button class="btn" type="primary" bindtap="choose">Start</button>
+      <button class="btn" type="primary" bindtap="choose">开始测试</button>
     </view>
 
   </view>
