@@ -105,4 +105,9 @@ Page({
     //   url: '../page1/page1'
     // })
   },
+  toAbout:function(){
+    wx.navigateTo({
+      url: '../about/about'
+    })
+  }
 })

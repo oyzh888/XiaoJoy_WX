@@ -22,7 +22,7 @@
     
     <view class="page-body">
      <view class='mytext'>
-      <text>关于 XiaoJoy</text>
+      <text bindtap='toAbout' class='mytext2'>About XiaoJoy</text>
       <text class='text-box'>
         一半音乐试题来自XiaoJoy的作品,XiaoJoy通过深度学习网络(LSTM)训练而成.\n另一半来自巴赫,莫扎特等作曲家们较为冷门的作品\n.
       </text>
