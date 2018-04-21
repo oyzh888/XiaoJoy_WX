@@ -48,7 +48,7 @@ Page({
           }
           console.log("Your answer: " + usersAnswer + "\nCorrect answer: " + correctAnswer + "\n" + "Score: " + getApp().globalData.score);
           getApp().globalData.currentQuestionId += 1;
-          wx.navigateTo({
+          wx.redirectTo({
             url: '../page2/page2'
           })
         }

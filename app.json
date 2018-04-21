@@ -1,5 +1,6 @@
 {
   "pages": [
+
     "page/component/pages/welcome/welcome",
     "page/component/pages/page1/page1",
     "page/component/pages/page2/page2",

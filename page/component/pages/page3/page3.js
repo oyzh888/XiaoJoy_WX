@@ -25,10 +25,10 @@ Page({
         if (res.confirm) {
           console.log('make sure');
           var score_user_get = getApp().globalData.scoreQ3;
-          score_user_get = 25 * (1 - Math.abs(score_user_get - 50) / 50)
+          score_user_get = 25 * (1 - Math.abs(score_user_get - 26) / 74)
           getApp().globalData.score += score_user_get;
           console.log(getApp().globalData.score)
-          wx.navigateTo({
+          wx.redirectTo({
             url: '../page4/page4'
           })
         }
