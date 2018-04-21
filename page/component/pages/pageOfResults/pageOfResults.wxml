@@ -1,7 +1,7 @@
 <import src="../../../common/head.wxml" />
 <import src="../../../common/foot.wxml" />
 
-<view class="container">
+<view class="container" style="background: url('') no-repeat">
   <template is="head" data="{{title: 'Results'}}"/>
 
   <view class="page-body">

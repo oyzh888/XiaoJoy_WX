@@ -1,7 +1,10 @@
 <import src="../../../common/head.wxml"/>
 <import src="../../../common/foot.wxml"/>
 
-<view class="container">
+<view class="container" style="background: url('http://xiaojoy-1252249490.cosbj.myqcloud.com/images/bg/welcome.png?sign=d2jL6of4avMr9BpjVU+CkmVB+wBhPTEyNTIyNDk0OTAmaz1BS0lENzNsRldZMXlNV1I4YXBkYTdVY1dGbTZDM2YxN01mOWkmZT0xNTI2ODMxNDgyJnQ9MTUyNDIzOTQ4MiZyPTQ1NzE3MzY1MyZmPS9pbWFnZXMvYmcvd2VsY29tZS5wbmcmYj14aWFvam95') no-repeat">
+  <!-- <view class="warp">
+    <image class="image-our" src="../../resources/pic/5.png"/>
+  </view> -->
   <!-- <template is="head" data="{{title: 'image'}}"/> -->
 
   <view class="page-body">
