@@ -75,9 +75,8 @@ Page({
     })
   },
   playAgain: function() {
-    resetGlobalData();
     wx.navigateTo({
-      url: '../page1/page1'
+      url: '../welcome/welcome'
     })
   },
 

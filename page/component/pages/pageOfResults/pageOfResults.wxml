@@ -17,7 +17,9 @@
     
     
     <view class="btn-area">
+      <button class="btn-center" type="primary" bindtap="playAgain">在做一次 </button>
       <button class="btn-center" type="primary" bindtap="onShareAppMessage" open-type="share" >分享结果 </button>
+
     </view>
     
     <view class="page-body">
