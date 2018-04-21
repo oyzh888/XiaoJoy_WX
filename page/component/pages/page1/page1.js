@@ -4,13 +4,13 @@ Page({
     sequence:'1/4',
     current1: {
       poster: 'https://xiaojoy-1256532887.cos.ap-chengdu.myqcloud.com/xiao.png',
-      name: 'Melody-1',
+      name: '乐曲-1',
       author: 'XiaoJoy',
       src: 'https://xiaojoy-1256532887.cos.ap-chengdu.myqcloud.com/1_AI_Bach_C.mp3',
     },
     current2: {
       poster: 'https://xiaojoy-1256532887.cos.ap-chengdu.myqcloud.com/Joy.png',
-      name: 'Melody-2',
+      name: '乐曲-2',
       author: 'XiaoJoy',
       src: 'https://xiaojoy-1256532887.cos.ap-chengdu.myqcloud.com/1_Single_Mozart_K049_30.mp3',
     },
@@ -33,13 +33,12 @@ Page({
     this.play1();
     this.play2();
     wx.showModal({
-      title: 'Are you sure?',
+      title: '确定没错?',
       // content: '这是一个模态弹窗',
       success: function (res) {
         if (res.confirm) {
           
           console.log(b.target.id);
-          
           var i = getApp().globalData.currentQuestionId;
           var usersAnswer = b.target.id;
           console.log(i)
