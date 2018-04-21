@@ -37,14 +37,11 @@ Page({
       success: function (res) {
         if (res.confirm) {
           // Duplicated code! Refactor
-          console.log(b.target.id);
           var i = getApp().globalData.currentQuestionId;
+          console.log(b.target.id);
           var usersAnswer = b.target.id;
-          var correctAnswer = getApp().globalData.correctAnswersList[i - 1];
-          if (usersAnswer == correctAnswer) {
-            getApp().globalData.score += 25;
-          }
-          console.log("Your answer: " + usersAnswer + "\nCorrect answer: " + correctAnswer + "\n" + "Score: " + getApp().globalData.score);
+          getApp().globalData.usersAnswersList[i] = b.target.id
+          console.log("Your answer: " + usersAnswer + "Score: " + getApp().globalData.score);
           getApp().globalData.currentQuestionId += 1;
 
           wx.redirectTo({
