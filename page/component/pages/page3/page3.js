@@ -6,7 +6,7 @@ Page({
   data: {
     current: {
       poster: 'https://xiaojoy-1256532887.cos.ap-chengdu.myqcloud.com/xiao.png',
-      name: 'Melody-5',
+      name: '乐曲-5',
       author: 'XiaoJoy',
       src: 'https://xiaojoy-1256532887.cos.ap-chengdu.myqcloud.com/Project-For%2BMM%2BVideo_1.mp3',
     },
@@ -19,7 +19,7 @@ Page({
   choose: function () {
     this.audioCtx.pause();    console.log('click');
     wx.showModal({
-      title: 'Are you sure?',
+      title: '下一题咯?',
       // content: '这是一个模态弹窗',
       success: function (res) {
         if (res.confirm) {

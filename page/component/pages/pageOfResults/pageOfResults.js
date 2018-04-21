@@ -1,18 +1,18 @@
 Page({
 
-  onLaunch: function (){
-    wx.getUserInfo({
-      success: function (res) {
-        var userinfo = res.userInfo
-        console.log(userinfo.city)
-        var nickname = userinfo.nickname
-        var city = userinfo.city
-        var gender = userinfo.gender
-      },
-      fail: function (res) { console.log("fail") },
-      complete: function (res) { },
-    })
-  },
+  // onLoad: function (){
+  //   wx.getUserInfo({
+  //     success: function (res) {
+  //       var userinfo = res.userInfo
+  //       console.log(userinfo.city)
+  //       var nickname = userinfo.nickname
+  //       var city = userinfo.city
+  //       var gender = userinfo.gender
+  //     },
+  //     fail: function (res) { console.log("fail") },
+  //     complete: function (res) { console.log("finish!!" + userinfo.city)},
+  //   })
+  // },
 
   data: {
     current: {
@@ -28,6 +28,18 @@ Page({
   onLoad: function() {
     this.setData({
       score: Math.round(getApp().globalData.score)
+    })
+    wx.getUserInfo({
+      success: function (res) {
+        var userInfo = res.userInfo
+        var nickName = userInfo.nickName
+        var avatarUrl = userInfo.avatarUrl
+        var gender = userInfo.gender //性别 0：未知、1：男、2：女
+        var province = userInfo.province
+        var city = userInfo.city
+        var country = userInfo.country
+        console.log(userInfo)
+      }
     })
   },
   choose: function() {
