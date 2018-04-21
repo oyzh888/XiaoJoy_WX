@@ -6,8 +6,9 @@
 
   <view class="page-body">
     <view class="page-section" style='text-align:center;'>
+      <text>点击每题<text style="font-size: 3ch" >播放</text>按钮试听题目\n\n</text>
       <text>1/4题</text>
-      <text>\n\n</text>
+      <text>\n</text>
       <text>A</text>
     </view>
     
