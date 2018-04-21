@@ -44,10 +44,8 @@ Page({
           var usersAnswer = b.target.id;
           console.log(i)
           var correctAnswer = getApp().globalData.correctAnswersList[i - 1];
-          if (usersAnswer == correctAnswer) {
-            getApp().globalData.score += 25;
-          }
-          console.log("Your answer: " + usersAnswer + "\nCorrect answer: " + correctAnswer + "\n" + "Score: " + getApp().globalData.score);
+          getApp().globalData.usersAnswersList[i] = b.target.id
+          console.log("Your answer: " + usersAnswer);
           getApp().globalData.currentQuestionId += 1;
           wx.redirectTo({
             url: '../page2/page2'

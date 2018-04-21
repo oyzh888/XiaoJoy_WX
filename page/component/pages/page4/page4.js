@@ -29,25 +29,21 @@ Page({
   choose: function (b) {
     this.play1();
     this.play2();
-    console.log('click');
-    // Duplicated code! Refactor
-    console.log(b.target.id);
-    var i = getApp().globalData.currentQuestionId;
-    var usersAnswer = b.target.id;
-    var correctAnswer = getApp().globalData.correctAnswersList[i - 1];
-    if (usersAnswer == correctAnswer) {
-      getApp().globalData.score += 25;
-    }
-    console.log("Your answer: " + usersAnswer + "\nCorrect answer: " + correctAnswer + "\n" + "Score: " + getApp().globalData.score);
-    getApp().globalData.currentQuestionId += 1;
-
+    
     wx.showModal({
       title: 'Are you sure?',
       // content: '这是一个模态弹窗',
       success: function (res) {
         if (res.confirm) {
-          console.log('You finished!');
-          
+          console.log('click');
+          // Duplicated code! Refactor
+          console.log(b.target.id);
+          var i = getApp().globalData.currentQuestionId;
+          var usersAnswer = b.target.id;
+          getApp().globalData.usersAnswersList[i] = b.target.id
+          console.log("Your answer: " + usersAnswer + "\n" + "Score: " + getApp().globalData.score);
+          getApp().globalData.currentQuestionId += 1;
+          console.log(getApp().globalData.currentQuestionId);
           wx.redirectTo({
             url: '../pageOfResults/pageOfResults'
           })

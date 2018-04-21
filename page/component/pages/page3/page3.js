@@ -24,10 +24,12 @@ Page({
       success: function (res) {
         if (res.confirm) {
           console.log('make sure');
-          var score_user_get = getApp().globalData.scoreQ3;
-          score_user_get = 25 * (1 - Math.abs(score_user_get - 26) / 74)
-          getApp().globalData.score += score_user_get;
-          console.log(getApp().globalData.score)
+          var score_user_get = getApp().globalData.scoreQ3
+          //score_user_get = 25 * (1 - Math.abs(score_user_get - 26) / 74)
+          var i = getApp().globalData.currentQuestionId;
+          getApp().globalData.usersAnswersList[i] = score_user_get;
+          console.log(score_user_get)
+          getApp().globalData.currentQuestionId += 1;
           wx.redirectTo({
             url: '../page4/page4'
           })

@@ -20,8 +20,8 @@ App({
     openid: null,
     score: 0,
     scoreQ3: 0,
-    usersAnswersList: [],
-    correctAnswersList: ['A', 'B', 'A', 'A'],
+    usersAnswersList: {1:'A', 2:'A', 3:'A', 4:'A'},
+    correctAnswersList: {1:'A', 2:'B', 3:'A', 4:'A'},
     currentQuestionId: 0
   },
   // lazy loading openid
