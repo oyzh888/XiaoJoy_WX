@@ -31,14 +31,14 @@
 
 .text-box{
   margin: 30rpx;
-  padding: 40rpx 0;
+  padding: 10rpx 10rpx;
   display: flex;
-  min-height: 300rpx;
+  min-height: 120rpx;
   background-color: #FFFFFF;
   justify-content: center;
   align-items: center;
   text-align: center;
   font-size: 30rpx;
-  color: #353535;
+  color: #9d9d9d;
   line-height: 2em;
 }
