@@ -29,6 +29,13 @@
   margin-top:30rpx
 }
 
+.mytext2{
+  text-align:cneter;
+  color:lightblue;
+  text-decoration-line: underline;
+  margin-top:30rpx
+}
+
 .text-box{
   margin: 30rpx;
   padding: 40rpx 0;

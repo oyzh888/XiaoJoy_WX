@@ -1,0 +1,55 @@
+<import src="../../../common/head.wxml"/>
+<import src="../../../common/foot.wxml"/>
+
+<view class="container" style="background: url('http://xiaojoy-1252249490.cosbj.myqcloud.com/images/bg/welcome.png?sign=d2jL6of4avMr9BpjVU+CkmVB+wBhPTEyNTIyNDk0OTAmaz1BS0lENzNsRldZMXlNV1I4YXBkYTdVY1dGbTZDM2YxN01mOWkmZT0xNTI2ODMxNDgyJnQ9MTUyNDIzOTQ4MiZyPTQ1NzE3MzY1MyZmPS9pbWFnZXMvYmcvd2VsY29tZS5wbmcmYj14aWFvam95') no-repeat">
+  <!-- <view class="warp">
+    <image class="image-our" src="../../resources/pic/5.png"/>
+  </view> -->
+  <!-- <template is="head" data="{{title: 'image'}}"/> -->
+
+  <view class="page-body">
+    
+    <view class="page-section page-section-gap">
+      <!-- <view class="page-section-title">Internet Image</view> -->
+      <!-- <view class="page-section-ctn">
+        <image class="image-our" src="../../resources/pic/6.png"/>
+      </view> -->
+    </view>
+    <view class="page-section page-section-gap">
+      <!-- <view class='mytitle'>都是</view> -->
+      <!-- <view class='mytext'>XiaoJoy is an AI composer.</view> -->
+      <!-- <view class='mytext' style='color: #000;'>我们团队相信“AI终将创造一切美好”
+让机器能够帮助人们更容易地创作音乐</view> -->
+      <text class='text-box'>
+        我们团队相信“AI终将创造一切美好”
+让机器能够帮助人们更容易地创作音乐
+感谢Google开源项目Magenta
+https://github.com/tensorflow/magenta
+给予我们的灵感
+也要感谢算法作曲界先驱们的突出贡献
+为了AI音乐,我们团队将再接再厉!
+      </text>
+    </view>  
+
+    <!-- <view class="page-section page-section-gap">
+      <button class="btn" type="primary" bindtap="choose">Start</button>
+    </view> -->
+     <template is="head" data="{{title: '还记得下面这些音乐么?'}}"/>
+    <view class="page-section page-section-gap" style="text-align: center;">
+
+      <audio style="text-align: left" src="{{current1.src}}"  id="1" bindplay="myplay" poster="{{current1.poster}}" name="{{current1.name}}" author="{{current1.author}}" action="{{audioAction}}" controls></audio>
+      <audio style="text-align: left" src="{{current2.src}}"  id="2" bindplay="myplay" poster="{{current2.poster}}" name="{{current2.name}}" author="{{current2.author}}" action="{{audioAction}}" controls></audio>
+      <audio style="text-align: left" src="{{current3.src}}"  id="3" bindplay="myplay" poster="{{current3.poster}}" name="{{current3.name}}" author="{{current3.author}}" action="{{audioAction}}" controls></audio>
+      <audio style="text-align: left" src="{{current4.src}}"  id="4" bindplay="myplay" poster="{{current4.poster}}" name="{{current4.name}}" author="{{current4.author}}" action="{{audioAction}}" controls></audio>
+      <audio style="text-align: left" src="{{current5.src}}"  id="5" bindplay="myplay" poster="{{current5.poster}}" name="{{current5.name}}" author="{{current5.author}}" action="{{audioAction}}" controls></audio>
+      <audio style="text-align: left" src="{{current6.src}}"  id="6" bindplay="myplay" poster="{{current6.poster}}" name="{{current6.name}}" author="{{current6.author}}" action="{{audioAction}}" controls></audio>
+      <audio style="text-align: left" src="{{current7.src}}"  id="7" bindplay="myplay" poster="{{current7.poster}}" name="{{current7.name}}" author="{{current7.author}}" action="{{audioAction}}" controls></audio>
+    </view>
+
+  </view>
+
+  
+</view>
+
+
+
