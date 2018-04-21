@@ -5,10 +5,10 @@ Page({
   },
   data: {
     current: {
-      poster: 'https://xiaojoy.blob.core.chinacloudapi.cn/audios/Joy.png',
+      poster: 'https://xiaojoy-1256532887.cos.ap-chengdu.myqcloud.com/xiao.png',
       name: 'Melody-5',
       author: 'XiaoJoy',
-      src: 'https://xiaojoy.blob.core.chinacloudapi.cn/audios/Project-For%20MM%20Video_1.mp3',
+      src: 'https://xiaojoy-1256532887.cos.ap-chengdu.myqcloud.com/Project-For%2BMM%2BVideo_1.mp3',
     },
     audioAction: {
       method: 'pause'
