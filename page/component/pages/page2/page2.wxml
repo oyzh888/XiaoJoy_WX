@@ -5,8 +5,9 @@
   <template is="head" data="{{title: 'Now what about this?'}}"/>
 
   <view class="page-body">
-    <view class="page-section" style='text-align:center;'><text>2/4</text>
-      <text>\n</text>
+    <view class="page-section" style='text-align:center;'>
+      <text>2/4题</text>
+      <text>\n\n</text>
       <text>A</text>
     </view>
     

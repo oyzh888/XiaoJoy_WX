@@ -1,4 +1,5 @@
 Page({
+
   data: {
     sequence:'1/4',
     current1: {

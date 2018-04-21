@@ -1,4 +1,19 @@
 Page({
+
+  onLaunch: function (){
+    wx.getUserInfo({
+      success: function (res) {
+        var userinfo = res.userInfo
+        console.log(userinfo.city)
+        var nickname = userinfo.nickname
+        var city = userinfo.city
+        var gender = userinfo.gender
+      },
+      fail: function (res) { console.log("fail") },
+      complete: function (res) { },
+    })
+  },
+
   data: {
     current: {
       poster: 'http://y.gtimg.cn/music/photo_new/T002R300x300M000003rsKF44GyaSk.jpg?max_age=2592000',
