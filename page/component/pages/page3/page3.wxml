@@ -6,6 +6,8 @@
 
   <view class="page-body">
     <view class="page-section" style='text-align:center;'>
+    <text>3/4</text>
+      <text>\n</text>
       <text>A</text>
     </view>
     

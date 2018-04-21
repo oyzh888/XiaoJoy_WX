@@ -2,7 +2,19 @@ const openIdUrl = require('./config').openIdUrl
 
 App({
   onLaunch: function () {
-    console.log('App Launch')
+  
+    wx.getUserInfo({
+         
+        success: function (res) {
+            var userinfo = res.userInfo
+            console.log(userinfo.city)
+            var nickname = userinfo.nickname
+            var city = userinfo.city
+            var gender = userinfo.gender
+        },
+        fail: function (res) {console.log("fail") },
+        complete: function (res) { },
+    })
   },
   onShow: function () {
     console.log('App Show')

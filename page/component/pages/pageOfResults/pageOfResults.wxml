@@ -7,7 +7,11 @@
   <view class="page-body">
 
     <view class="page-section" style='text-align:center;'>
-      <text style='font-size:3ch;'>Your score: {{score}}</text>
+       <text style='font-size:3ch;'>Your score: {{score}</text>
+      <view wx:if="{{score>90}}">专家级</view>
+      <view wx:elif="{{score>70}}">音乐优秀玩家</view>
+      <view wx:elif="{{score>50}}">音乐爱好者</view>
+      <view wx:else>仍需努力</view>
     </view>
     
     

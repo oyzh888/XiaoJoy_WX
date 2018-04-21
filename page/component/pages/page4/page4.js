@@ -1,16 +1,16 @@
 Page({
   data: {
     current1: {
-      poster: 'https://xiaojoy.blob.core.chinacloudapi.cn/audios/Joy.png',
+      poster: 'https://xiaojoy-1256532887.cos.ap-chengdu.myqcloud.com/xiao.png',
       name: 'Melody-6',
       author: 'XiaoJoy',
-      src: 'https://xiaojoy.blob.core.chinacloudapi.cn/audios/4_AI_LongSample.mp3',
+      src: 'https://xiaojoy-1256532887.cos.ap-chengdu.myqcloud.com/3_AI_Attention.mp3',
     },
     current2: {
-      poster: 'https://xiaojoy.blob.core.chinacloudapi.cn/audios/xiao.png',
+      poster: 'https://xiaojoy-1256532887.cos.ap-chengdu.myqcloud.com/Joy.png',
       name: 'Melody-7',
       author: 'XiaoJoy',
-      src: 'https://xiaojoy.blob.core.chinacloudapi.cn/audios/4_Mozart.mp3',
+      src: 'https://xiaojoy-1256532887.cos.ap-chengdu.myqcloud.com/3_%C3%A6%C2%B5%C2%81%C3%A8%C2%A1%C2%8C.mp3',
     },
 
     audioAction: {

@@ -26,6 +26,9 @@ Page({
       url: '../page1/page1'
     })
   },
+  onLoad:function(){
+    
+  },
   onShareAppMessage: function (res) {
     if (res.from === 'button') {
       // 来自页面内转发按钮
