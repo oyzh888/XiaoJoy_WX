@@ -9,10 +9,10 @@
     <view class="page-section" style='text-align:center;'>
       <text style='font-size:3ch;'>音乐鉴别力: {{score}}\n\n</text>
       <text style='color:#9d9d9d;'>您的评级</text>
-      <view style='font-size:3ch;' wx:if="{{score>90}}">音乐大师</view>
-      <view style='font-size:3ch;' wx:elif="{{score>70}}">音乐爱好者</view>
-      <view style='font-size:3ch;' wx:elif="{{score>50}}">普通人 </view>
-      <view style='font-size:3ch;' wx:else>乐盲</view>
+      <view style='font-size:3ch;' wx:if="{{score>90}}">贝多芬再世也不过如此</view>
+      <view style='font-size:3ch;' wx:elif="{{score>70}}">您已经超越了全国70%的人</view>
+      <view style='font-size:3ch;' wx:elif="{{score>50}}">你我都是茫茫人海中的一个普通人</view>
+      <view style='font-size:3ch;' wx:else>小乐对您的音乐水平不发表意见</view>
     </view>
     
     
