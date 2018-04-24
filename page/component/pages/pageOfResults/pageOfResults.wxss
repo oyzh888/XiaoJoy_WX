@@ -31,7 +31,7 @@
 
 .mytext2{
   text-align:cneter;
-  color:lightblue;
+  color:#328af0;
   text-decoration-line: underline;
   margin-top:30rpx
 }

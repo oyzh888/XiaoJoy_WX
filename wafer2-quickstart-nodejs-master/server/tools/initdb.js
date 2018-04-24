@@ -7,6 +7,7 @@ const fs = require('fs')
 const path = require('path')
 const { mysql: config } = require('../config')
 
+console.log(config)
 console.log('\n======================================')
 console.log('开始初始化数据库...')
 
@@ -38,5 +39,7 @@ DB.raw(content).then(res => {
     console.log('数据库初始化成功！')
     process.exit(0)
 }, err => {
+    console.log('get an error when connect server')
+    // console.log(content)
     throw new Error(err)
 })

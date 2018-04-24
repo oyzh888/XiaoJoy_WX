@@ -4,14 +4,14 @@ Page({
       poster: 'https://xiaojoy-1256532887.cos.ap-chengdu.myqcloud.com/xiao.png',
       name: '乐曲-3',
       author: 'XiaoJoy',
-      src: 'https://xiaojoy-1256532887.cos.ap-chengdu.myqcloud.com/2_AI_Single_LittleStar.mp3',
+      src: 'https://xiaojoy-1256532887.cos.ap-chengdu.myqcloud.com/2_BachWTC1222.mp3',
 
     },
     current2: {
       poster: 'https://xiaojoy-1256532887.cos.ap-chengdu.myqcloud.com/Joy.png',
       name: '乐曲-4',
       author: 'XiaoJoy',
-      src: 'https://xiaojoy-1256532887.cos.ap-chengdu.myqcloud.com/2_BachWTC1222.mp3',
+      src: 'https://xiaojoy-1256532887.cos.ap-chengdu.myqcloud.com/2_AI_Single_LittleStar.mp3',
     },
 
     audioAction: {

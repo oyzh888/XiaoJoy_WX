@@ -43,7 +43,7 @@ function request(options) {
     var fail = options.fail || noop;
     var complete = options.complete || noop;
     var originHeader = options.header || {};
-
+    
     // 成功回调
     var callSuccess = function () {
         success.apply(null, arguments);

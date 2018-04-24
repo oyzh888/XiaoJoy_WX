@@ -7,7 +7,7 @@
   <view class="page-body">
 
     <view class="page-section" style='text-align:center;'>
-      <text style='font-size:3ch;'>得分: {{score}}\n\n</text>
+      <text style='font-size:3ch;'>音乐鉴别力: {{score}}\n\n</text>
       <text style='color:#9d9d9d;'>您的评级</text>
       <view style='font-size:3ch;' wx:if="{{score>90}}">音乐大师</view>
       <view style='font-size:3ch;' wx:elif="{{score>70}}">音乐爱好者</view>
@@ -17,7 +17,7 @@
     
     
     <view class="btn-area">
-      <button class="btn-center" type="primary" bindtap="playAgain">在做一次 </button>
+      <button class="btn-center" type="primary" bindtap="playAgain">再做一次 </button>
       <button class="btn-center" type="primary" bindtap="onShareAppMessage" open-type="share" >分享结果 </button>
 
     </view>
@@ -26,7 +26,7 @@
      <view class='mytext'>
       <text bindtap='toAbout' class='mytext2'>About XiaoJoy</text>
       <text class='text-box'>
-        一半音乐试题来自XiaoJoy的作品,XiaoJoy通过深度学习网络(LSTM)训练而成.\n另一半来自巴赫,莫扎特等作曲家们较为冷门的作品\n.
+        一半音乐试题来自XiaoJoy的作品,XiaoJoy通过深度学习网络(LSTM)训练而成.\n另一半来自巴赫,莫扎特等作曲家们的作品\n.
       </text>
      </view>
     </view>

@@ -19,7 +19,7 @@
       <view class='mytitle'>欢迎来到 XiaoJoy</view>
       <view class='mytext'>(人工智能(AI)作曲机器人)</view>
       <text>\n\n</text>
-      <view class='mytext' style='color: #000;'>你能分辨出哪首乐曲是<text style="font-size: 3ch" > AI </text>创作的么?</view>
+      <view class='mytext' style='color: #000;'>你能分辨出哪首乐曲是<text style="font-size: 3ch" > 小乐 </text>创作的么?</view>
     </view>  
 
     <view class="page-section page-section-gap">
