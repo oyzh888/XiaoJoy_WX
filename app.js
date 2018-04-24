@@ -21,7 +21,7 @@ App({
     score: 0,
     scoreQ3: 0,
     usersAnswersList: {1:'A', 2:'A', 3:'A', 4:'A'},
-    correctAnswersList: {1:'A', 2:'B', 3:'A', 4:'A'},
+    correctAnswersList: {1:'A', 2:'A', 3:'A', 4:'A'},
     currentQuestionId: 0
   },
   // lazy loading openid
