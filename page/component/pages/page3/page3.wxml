@@ -2,7 +2,7 @@
 <import src="../../../common/foot.wxml" />
 
 <view class="container" style="background: url('http://xiaojoy-1252249490.cosbj.myqcloud.com/images/bg/page1_notes.png?sign=nDvI5AiXXIxjPYXC/RbmXCIqEUthPTEyNTIyNDk0OTAmaz1BS0lENzNsRldZMXlNV1I4YXBkYTdVY1dGbTZDM2YxN01mOWkmZT0xNTI2ODMyMTcxJnQ9MTUyNDI0MDE3MSZyPTE0NzI4NzgxMjImZj0vaW1hZ2VzL2JnL3BhZ2UxX25vdGVzLnBuZyZiPXhpYW9qb3k=') no-repeat">
-  <template is="head" data="{{title: '音乐中百分之多少的音符是AI创作的,其余部分由人类音乐家完成?'}}"/>
+  <template is="head" data="{{title: '音乐中百分之多少的音符是人工智能创作的,其余部分由人类音乐家完成?'}}"/>
 
   <view class="page-body">
     <view class="page-section" style='text-align:center;'>
