@@ -3,7 +3,6 @@
 
 <view class="container" style="background: url('http://xiaojoy-1252249490.cosbj.myqcloud.com/images/bg/page4.png?sign=cybPU+Ix6dGrpB4nVJd1sjeEIHZhPTEyNTIyNDk0OTAmaz1BS0lENzNsRldZMXlNV1I4YXBkYTdVY1dGbTZDM2YxN01mOWkmZT0xNTI2ODMxNDgyJnQ9MTUyNDIzOTQ4MiZyPTc2MzQ0ODc4MSZmPS9pbWFnZXMvYmcvcGFnZTQucG5nJmI9eGlhb2pveQ==') no-repeat">
   <template is="head" data="{{title: '哪一首音乐是小乐创作的?'}}"/>
-
   <view class="page-body">
     <view class="page-section" style='text-align:center;'>
       <text>4/4题</text>
