@@ -2,10 +2,11 @@
   text-align: center;
 }
 
-.image {
+.image-our {
   margin-top: 30rpx;
   width: 580rpx;
-  height: 208rpx;
+  height: 508rpx;
+  transform:scale(0.9);
 }
 
 .mytext{
