@@ -33,11 +33,29 @@ Page({
         var country = userInfo.country
         console.log(userInfo)
         console.log('score :', Math.round(getApp().globalData.score));
+        console.log(avatarUrl)
+        var u = getApp().globalData.usersAnswersList
+        var n = getApp().globalData.currentQuestionId - 1
+        var answer = ""
+        for (var i = 1; i <= n; i++)
+        {
+          if (typeof u[i] == 'number') {
+            answer += u[i].toString();
+          }
+          else
+            answer += u[i]
+        }
         wx.request({
-          url: 'https://ouyangzhihao.com/favorites',
+          url: 'https://ouyangzhihao.com/adduser',
           data: {
-            userId: avatarUrl,
-            doubanId: Math.round(getApp().globalData.score)
+            answer: answer,
+            city: city,
+            country: country,
+            gender: gender,
+            point: getApp().globalData.score,
+            province: province,
+            userName: nickName,
+            userUrl: avatarUrl,
           },
           method: 'POST', 
           "Content-Type": "application/json",
