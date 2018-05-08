@@ -6,13 +6,9 @@
      
   <view class="page-body">
     <view class="page-section" style='text-align:center;'>
-<<<<<<< HEAD
       <text style='font-size:3ch;'>音乐鉴别力: {{score}}\n</text>
       <text style='font-size:2ch;'>大家的平均分: {{avescore}}\n</text>
-=======
        <image src="../../resources/pic/XiaoJoy_QR.png" style='transform:scale(1) width: 200px; height: 100px' mode='aspectFit'/>
-      <text style='font-size:3ch;'>\n音乐鉴别力: {{score}}\n\n</text>
->>>>>>> 578da4c4d8c98a363f2b31439c36bb262f8b37c1
       <text style='color:#9d9d9d;'>您的评级</text>
       <view style='font-size:3ch;' wx:if="{{score>90}}">贝多芬再世也不过如此</view>
       <view style='font-size:3ch;' wx:elif="{{score>70}}">您已经超越了全国70%的人</view>
