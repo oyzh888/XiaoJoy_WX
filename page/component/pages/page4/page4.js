@@ -44,6 +44,7 @@ Page({
           console.log("Your answer: " + usersAnswer + "\n" + "Score: " + getApp().globalData.score);
           getApp().globalData.currentQuestionId += 1;
           console.log(getApp().globalData.currentQuestionId);
+          
           wx.redirectTo({
             url: '../pageOfResults/pageOfResults'
           })

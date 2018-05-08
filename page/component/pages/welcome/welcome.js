@@ -15,6 +15,15 @@ Page({
         
       }
     })
+    wx.request({
+      url: 'https://ouyangzhihao.com/userpoint',
+      success: function (res) {
+        console.log("get successfully")
+        console.log(res.data)
+        getApp().globalData.avescore = res.data
+        console.log(getApp().globalData.avescore)
+      }
+    })
   },
   
   data: {

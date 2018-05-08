@@ -19,6 +19,7 @@ App({
     hasLogin: false,
     openid: null,
     score: 0,
+    avescore: 0,
     scoreQ3: 0,
     usersAnswersList: {1:'A', 2:'A', 3:'A', 4:'A'},
     correctAnswersList: {1:'A', 2:'B', 3:'A', 4:'A'},

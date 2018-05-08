@@ -7,7 +7,8 @@
   <view class="page-body">
 
     <view class="page-section" style='text-align:center;'>
-      <text style='font-size:3ch;'>音乐鉴别力: {{score}}\n\n</text>
+      <text style='font-size:3ch;'>音乐鉴别力: {{score}}\n</text>
+      <text style='font-size:2ch;'>大家的平均分: {{avescore}}\n</text>
       <text style='color:#9d9d9d;'>您的评级</text>
       <view style='font-size:3ch;' wx:if="{{score>90}}">贝多芬再世也不过如此</view>
       <view style='font-size:3ch;' wx:elif="{{score>70}}">您已经超越了全国70%的人</view>

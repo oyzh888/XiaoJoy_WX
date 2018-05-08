@@ -7,6 +7,7 @@ Page({
     var c = getApp().globalData.correctAnswersList
     var n = getApp().globalData.currentQuestionId - 1
     getApp().globalData.score = 0
+    
     console.log(c)
     for (var i = 1; i <= n; i++) {
       if (typeof u[i] == 'number') {
@@ -21,6 +22,11 @@ Page({
     }
     this.setData({
       score: Math.round(getApp().globalData.score)
+    })
+    console.log("test")
+    console.log(getApp().globalData.avescore)
+    this.setData({
+      avescore: Math.round(getApp().globalData.avescore)
     })
     wx.getUserInfo({
       success: function (res) {
